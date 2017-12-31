@@ -37,7 +37,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # deploy
-      - run: git config user.name "Travis CI"
-      - run: git config user.email "$CIRCLE_USSERNAME"
+      - run: git config --global user.name "Travis CI"
+      - run: git config --global user.email "$CIRCLE_USSERNAME"
       - run: yarn deploy
 
