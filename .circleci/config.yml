@@ -38,6 +38,6 @@ jobs:
         
       # deploy
       - run: git config --global user.name "Travis CI"
-      - run: git config --global user.email "$CIRCLE_USSERNAME"
+      - run: git config --global user.email "$CIRCLE_USERNAME"
       - run: yarn deploy
 
